@@ -15,8 +15,5 @@ VALUES ('Ashish', 'Aggarwal', 'Skagen 21', 'Stavanger', 'MP','4006','987614400',
 INSERT INTO AddressBook (FirstName, LastName, Address, City, State,zip,phone,email)
 VALUES ('Punit', 'Patel', 'Megan 21', 'Mexico', 'AP','4642','945314400', 'abc@gmail.com');
 
-select * from AddressBook;
-
-DELETE FROM AddressBook WHERE FirstName='Ashish';
-
-select * from AddressBook;
+select * from AddressBook
+WHERE City='Mexico';
