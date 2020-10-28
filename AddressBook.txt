@@ -9,15 +9,17 @@ CREATE TABLE AddressBook (
     email varchar(255)
     );
     
-INSERT INTO AddressBook (FirstName, LastName, Address, City, State,zip,phone,email)
-VALUES ('Bored', 'Aggarwal', 'Skagen 21', 'California', 'MP','5006','9876144500', 'abdd@gmail.com');
+ALTER TABLE AddressBook
+ADD type varchar(255);
+    
+INSERT INTO AddressBook (FirstName, LastName, Address, City, State,zip,phone,email,type)
+VALUES ('Bored', 'Aggarwal', 'Skagen 21', 'California', 'MP','5006','9876144500', 'abdd@gmail.com','friend');
 
-INSERT INTO AddressBook (FirstName, LastName, Address, City, State,zip,phone,email)
-VALUES ('Ashish', 'Aggarwal', 'Skagen 21', 'California', 'UP','4006','987614400', 'ab@gmail.com');
+INSERT INTO AddressBook (FirstName, LastName, Address, City, State,zip,phone,email,type)
+VALUES ('Ashish', 'Aggarwal', 'Skagen 21', 'California', 'UP','4006','987614400', 'ab@gmail.com','friend');
 
-INSERT INTO AddressBook (FirstName, LastName, Address, City, State,zip,phone,email)
-VALUES ('Punit', 'Patel', 'Megan 21', 'Mexico', 'AP','4642','945314400', 'abc@gmail.com');
+INSERT INTO AddressBook (FirstName, LastName, Address, City, State,zip,phone,email,type)
+VALUES ('Punit', 'Patel', 'Megan 21', 'Mexico', 'AP','4642','945314400', 'abc@gmail.com','Professional');
 
-SELECT * FROM AddressBook
-where City='California'
-ORDER BY FirstName;
+
+SELECT * FROM AddressBook;
