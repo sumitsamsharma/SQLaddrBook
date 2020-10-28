@@ -9,3 +9,7 @@ CREATE TABLE AddressBook (
     email varchar(255)
     );
     
+INSERT INTO AddressBook (FirstName, LastName, Address, City, State,zip,phone,email)
+VALUES ('Ashish', 'Aggarwal', 'Skagen 21', 'Stavanger', 'MP','4006','987614400', 'ab@gmail.com');
+
+select * from AddressBook;
