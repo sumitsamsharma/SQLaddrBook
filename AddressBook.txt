@@ -10,13 +10,14 @@ CREATE TABLE AddressBook (
     );
     
 INSERT INTO AddressBook (FirstName, LastName, Address, City, State,zip,phone,email)
-VALUES ('Ashish', 'Aggarwal', 'Skagen 21', 'Stavanger', 'MP','4006','987614400', 'ab@gmail.com');
+VALUES ('Bored', 'Aggarwal', 'Skagen 21', 'California', 'MP','5006','9876144500', 'abdd@gmail.com');
+
+INSERT INTO AddressBook (FirstName, LastName, Address, City, State,zip,phone,email)
+VALUES ('Ashish', 'Aggarwal', 'Skagen 21', 'California', 'UP','4006','987614400', 'ab@gmail.com');
 
 INSERT INTO AddressBook (FirstName, LastName, Address, City, State,zip,phone,email)
 VALUES ('Punit', 'Patel', 'Megan 21', 'Mexico', 'AP','4642','945314400', 'abc@gmail.com');
 
-SELECT COUNT(City)
-FROM AddressBook;
-
-SELECT COUNT(State)
-FROM AddressBook;
+SELECT * FROM AddressBook
+where City='California'
+ORDER BY FirstName;
