@@ -17,11 +17,6 @@ VALUES ('Punit', 'Patel', 'Megan 21', 'Mexico', 'AP','4642','945314400', 'abc@gm
 
 select * from AddressBook;
 
-UPDATE AddressBook
-SET 
-    email = 'mary.patterson@classicmodelcars.com'
-WHERE
-    FirstName = 'Ashish';
-
+DELETE FROM AddressBook WHERE FirstName='Ashish';
 
 select * from AddressBook;
