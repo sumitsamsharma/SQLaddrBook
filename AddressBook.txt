@@ -1,1 +1,11 @@
-CREATE DATABASE db
+CREATE TABLE AddressBook (
+    FirstName varchar(255),
+    LastName varchar(255),
+    Address varchar(255),
+    City varchar(255),
+    State varchar(255),
+    zip varchar(255),
+    phone varchar(255),
+    email varchar(255)
+    );
+    
