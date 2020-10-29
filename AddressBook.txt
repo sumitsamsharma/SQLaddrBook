@@ -1,4 +1,6 @@
 
+
+
 CREATE TABLE AddressBook (
     FirstName varchar(255),
     LastName varchar(255),
@@ -21,6 +23,18 @@ VALUES ('Ashish', 'Aggarwal', 'Skagen 21', 'California', 'UP','4006','987614400'
 
 INSERT INTO AddressBook (FirstName, LastName, Address, City, State,zip,phone,email,type)
 VALUES ('Punit', 'Patel', 'Megan 21', 'Mexico', 'AP','4642','945314400', 'abc@gmail.com','Professional');
+
+Select * from AddressBook;
+
+select * from AddressBook
+WHERE City='Mexico';
+
+SELECT COUNT(State)
+FROM AddressBook;
+
+SELECT * FROM AddressBook
+where City='California'
+ORDER BY FirstName;
 
 
 
